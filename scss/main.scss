@@ -1,0 +1,47 @@
+@import 'config';
+@import 'utilities';
+body {
+    background-color: #ffffff;
+}
+
+
+
+// Navbar 
+.navbar {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #ffffff;
+
+
+.navbar-nav .nav-link {
+    font-weight: 400;
+}
+ .navbar-nav .nav-link:hover {
+    color: #5a4fdc !important;
+}
+
+}
+// Main section  
+
+#main-section {
+    margin-top: 60px;
+    padding: 30px 0;
+    background: url('../img/hero-1-bg-img.png') no-repeat center center/cover;
+
+    .main-inner .row .call-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        line-height: 2;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    form {
+        width: 90%;
+    }
+}
