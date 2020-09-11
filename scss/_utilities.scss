@@ -2,3 +2,19 @@
     background-color: #5a4fdc;
     border: none;
 }
+.btn-primary:hover {
+    background-color: #5a4fdc;
+    opacity: 0.8;
+}
+.btn-outline-primary {
+    border: 1px solid #5a4fdc;
+    color: #5a4fdc;
+}
+.btn-outline-primary:hover {
+    background-color: #5a4fdc;
+    border: #5a4fdc;
+}
+
+.bg-light {
+    color: #000 !important;
+}

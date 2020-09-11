@@ -3,8 +3,48 @@
 body {
     background-color: #ffffff;
 }
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(#e66465, #9198e5)  !important;
+}
 
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #fff !important;
+    border-radius: 3px;
 
+    position: absolute;
+    top: 28%;
+    left: 48%;
+
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
 
 // Navbar 
 .navbar {
@@ -27,6 +67,7 @@ body {
     margin-top: 60px;
     padding: 30px 0;
     background: url('../img/hero-1-bg-img.png') no-repeat center center/cover;
+    z-index: 1000;
 
     .main-inner .row .call-info {
         display: flex;
@@ -42,6 +83,70 @@ body {
     }
 
     form {
-        width: 90%;
+        width: 100%;
     }
+}
+
+// Services 
+
+#services .container {
+  
+
+  .card:hover {
+    background-color: #8176fc !important;
+    transform: scale(1.02);
+    color: #fff !important;
+    transition: 0.1ms;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+
+
+ 
+  }
+
+  .row .col-md-4 {
+    .fas {
+      background-color: #f3f3f3 !important;
+      color: #5a4fdc;
+      padding: 15px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+  }
+  
+.card-body {
+  border: none;
+  cursor: pointer;
+  transition: 0.1ms ease-in-out;
+  
+
+.card-body:hover {
+  color: #fff;
+}
+
+}
+  .row .dash-box {
+  box-shadow: 0 2px 1px 0 rgba(0,0,0, 0.1) !important;
+  background-color: hsl(0, 0%, 99%);
+
+
+  .fas {
+    background-color: #f3f3f3 !important;
+    color: #5a4fdc;
+    padding: 15px;
+    border-radius: 50%;
+  }
+}
+
+
+}
+
+// Features
+
+#features {
+
+
+
+  .row {
+    line-height: 1.8;
+  }
 }

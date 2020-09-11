@@ -9,19 +9,22 @@
     <link rel="shortcut icon" href="img/Favicon.ico" type="image">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
     <title>Lezir - Responsive bootsrap 5 landing page </title>
   </head>
   <body>
 
-    
+    <!--CSS Spinner-->
+    <!-- <div class="spinner-wrapper">
+      <div class="spinner"></div>
+    </div> -->
 
 
     <!-- Navigation Bar -->
       
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
         <a class="navbar-brand" href="#index.html"><img src="img/logo-dark.png" alt="" class="logo"></a>
         
@@ -32,10 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -65,7 +68,7 @@
 <div class="container">
         <div class="main-inner ">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="call-info">
                         <h1 class="h1 mb-5 display-3">Creative Landing Page</h1>
                         <p class="lead mb-5">Creative and modern landing page with lezir template and we love making amazing stuff</p>
@@ -92,26 +95,86 @@
 <!-- Services -->
 <section id="services">
   <div class="container">
-<div class="row align-items center">
-  <div class="col-sm-4">
+<div class="row align-items-center">
+  <div class="col-md-4 align-items-center">
     <div class="mb-4">
-      
-
+     
+      <i class="fas fa-globe fa-4x"></i>
       <h3>Why choose us </h3>
 
-      <p>Nam libero tempore cum soluta as nobis est eligendi optio cumque nihile impedite quo minus id quod maxime</p>
+      <p class="text-muted">Nam libero tempore cum soluta as nobis est eligendi optio cumque nihile impedite quo minus id quod maxime</p>
 
       <a href="#" class="btn btn-outline-primary">Learn More</a>
     </div>
   </div>
-  <div class="col-sm-8">
-
+ 
+  <div class="col-sm-4">
+    <div class="card dash-box mb-3 mt-5 p-3">
+      <div class="card-body text-center">
+        <i class="fas fa-toolbox fa-3x"></i>
+      <h3>Easy to use </h3>
+      <p class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, enim.</p>
+    </div>
+    </div>
+    <div class="card dash-box mb-3 p-3">
+      <div class="card-body text-center">
+        <i class="fas fa-shield-alt fa-3x"></i>
+      <h3>Analytics Security</h3>
+      <p class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, enim.</p>
+    </div>
+    </div>
   </div>
-</div>
-</div>
+
+  <div class="col-sm-4">
+    <div class="card dash-box mb-3 p-3">
+      <div class="card-body text-center">
+        <i class="fas fa-chart-line fa-3x"></i>
+      <h3>Grow Your Revenue </h3>
+      <p class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, enim.</p>
+    </div>
+    </div>
+    <div class="card dash-box mb-3 p-3">
+      <div class="card-body text-center">
+        <i class="fas fa-coins fa-3x"></i>
+      <h3>Data Privacy </h3>
+      <p class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, enim.</p>
+    </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
 </section>
 
+<!-- Features -->
 
+<section id="features">
+  <div class="bg-light">
+  <div class="container  mt-5 pt-5">
+    <div class="dash-box">
+      <div class="col text-center">
+        <h3>Awesome Features </h3>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sint eius laudantium ad facilis maiores quibusdam laborum corrupti quisquam veritatis voluptate!</p>
+      </div>
+    </div>
+    <div class="row mt-5 pt-5">
+      <div class="col-sm-6 ">
+        <img src="img/features-img.png" alt="">
+      </div>
+      <div class="col-sm-6">
+          <h3 class="h4"> CREATIVE FEATURES</h3>
+          <h4>Build <strong> community </strong> & conversion with our suite of <strong> Social tool</strong></h4>
+          <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, architecto fugiat id et placeat enim dolores quae tempore similique laborum neque eos corporis tempora tenetur iusto nemo dolore magni! Consectetur repellendus </p>
+          <p> Lorem ipsum dolor sit amet, consectetur</p>
+          <p> corporis tempora tenetur tenter.</p>
+
+          <a href="#" class="btn btn-primary">Read More</a>
+          <a href="#" class="btn btn-outline-primary bg-light">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
 
 
 
@@ -121,5 +184,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="javascript/script.js"></script>
+
   </body>
 </html>
