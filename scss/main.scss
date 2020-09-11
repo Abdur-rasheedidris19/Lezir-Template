@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap');
 @import 'config';
 @import 'utilities';
 body {
     background-color: #ffffff;
+    color: #7c7c7c !important;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .spinner-wrapper {
     position: fixed;
