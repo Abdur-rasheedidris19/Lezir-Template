@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap');
 @import 'config';
 @import 'utilities';
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: #ffffff;
-    color: #7c7c7c !important;
+    color: $font-stack !important;
     font-family: 'Noto Sans JP', sans-serif;
 }
 .spinner-wrapper {
@@ -51,7 +54,7 @@ body {
 
 // Navbar 
 .navbar {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: $box-shadow;
     z-index: 1;
     background-color: #ffffff;
 
@@ -83,6 +86,7 @@ body {
 
     h1 {
         font-weight: bold;
+        text-shadow: $text-shadow;
     }
 
     form {
@@ -130,14 +134,6 @@ body {
   .row .dash-box {
   box-shadow: 0 2px 1px 0 rgba(0,0,0, 0.1) !important;
   background-color: hsl(0, 0%, 99%);
-
-
-  .fas {
-    background-color: #f3f3f3 !important;
-    color: #5a4fdc;
-    padding: 15px;
-    border-radius: 50%;
-  }
 }
 
 
@@ -145,11 +141,13 @@ body {
 
 // Features
 
-#features {
-
+#features{
+    margin-top: 40px;
 
 
   .row {
     line-height: 1.8;
   }
 }
+
+// Pricing 
